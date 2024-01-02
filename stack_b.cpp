@@ -17,39 +17,6 @@ Stack_B ::~Stack_B(){
    delete[] stk;
    
 }
-
-   
-
-// void Stack_B ::push(int data){
-//   try{
-//     if(size>=capacity){
-//       int capacity2=capacity*2; 
-//       int*temp = new int[capacity2];
-//       for(int i=0;i<size;i++){
-//          temp[i]=stk[i];
-//          }
-//        delete[] stk;
-//        stk=temp;
-//        capacity=capacity2;
-       
-//     }
-  
-       
-         
-//           size=size+1;
-//           stk[size-1]=data;
-        
-     
-       
-//   }
-    
-    
-//        catch (const bad_alloc& e){
-//         throw  std::runtime_error("Out Of Memory");
-//        }
-    
-// }
-
 void Stack_B ::push(int data){
  
     if(size>=capacity){
@@ -223,13 +190,6 @@ int  Stack_B :: multiply(){
   return pointer;
  }
  int  Stack_B ::get_size(){
-    // int s = counter +1;
-    // if(size!=0){
-    return size;
-    // }
-    // else{
-    //   throw std::runtime_error("Empty Stack");  
-    // }
-
- }
+    return size;  
+}
  
