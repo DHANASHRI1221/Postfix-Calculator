@@ -4,8 +4,6 @@
 #include"stack_a.h"
 using namespace std;
 
-//  int counter=(-1);
-
 Stack_A ::Stack_A(){
    
     size=0;
@@ -16,8 +14,6 @@ Stack_A ::Stack_A(){
 
 void Stack_A ::push(int data){
     if(  size < 1024){
-    //  counter=counter+1;
-      //  size=size+1;
       stk[size]=data;
        size=size+1;
 
@@ -36,8 +32,6 @@ void Stack_A ::push(int data){
     //  return -1;
     }
     else{
-      // int t = stk[size-1];
-      // counter--; 
       size=size-1;
       return stk[size]; 
     }
@@ -66,11 +60,6 @@ int Stack_A ::get_element_from_bottom(int idx){
 
 }
  void  Stack_A ::print_stack(bool top_or_bottom){
-    // if (size<1){
-    //      throw std::runtime_error("Not Enough Arguments");
-
-    // // }
-    // else{
     if(top_or_bottom==true){
      for(int i=size-1;i>-1;i--){
         cout<<stk[i]<<endl;
@@ -166,21 +155,11 @@ int Stack_A ::get_element_from_bottom(int idx){
 
  
  int* Stack_A :: get_stack(){
-  // if (size<1){
-  //        throw std::runtime_error("Not Enough Arguments");
-
-  //   }
   int* ptr= stk;
   return ptr;
  }
  int  Stack_A ::get_size(){
-    // int s = counter +1;
-    // if(size!=0){
+   
     return size;
-    // }
-    // else{
-    //   throw std::runtime_error("Not Enough Arguments");  
-    // }
-
  }
  
