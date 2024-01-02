@@ -17,12 +17,7 @@ Node ::  Node(int v, Node* nxt=nullptr, Node* prv=nullptr) {
 
 }
 bool Node ::  is_sentinel_node(){
-// if(  sentinel== true){
-//  return true;
-// }
-// else{
-//     return false;
-// }
+
 return is_sentinel;
 
 }
