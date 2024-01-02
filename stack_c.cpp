@@ -7,10 +7,7 @@ using namespace std;
 Stack_C :: Stack_C(){
     // try{
    stk= new List();
-    // }
-    // catch (const bad_alloc& e){
-    //     throw  std::runtime_error("Out Of Memory");
-    //    }
+ 
 }
 Stack_C ::~Stack_C(){
     delete stk;
@@ -154,15 +151,7 @@ else{
    if(a!=0){
   int i= b /a;
   int d;
-  // int i;
-  // if(c<=0 && b%a!=0){
-  //  i=c-1;
-   
-  // }
-  // else{
-  //  i=c;
-   
-  // }
+
    if(i==0 && b>=0 && a>0 ||i==0 && b<=0 && a<0){
          d=0;
       }
@@ -184,13 +173,13 @@ else{
    }
    else{
     throw std::runtime_error("Divide by Zero Error");
-    //  return -1;
+
 
    }
     }
     else{
          throw std::runtime_error( "Not Enough Arguments");
-        //  return -1;
+    
     
     }
 
