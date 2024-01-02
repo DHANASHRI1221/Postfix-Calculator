@@ -7,7 +7,8 @@ Part (b): Dynamically Sized Array Stacks
 Part (c): Doubly Linked List Stacks
 In Each part introduced advancements in handling the stack data structure, catering to different needs and scenarios.
 
-Features
+Features:
+
 ✨ Part (a): Stacks using Fixed Size Arrays
 Efficient stack operations with a fixed-size array.
 Standard mathematical operations and additional commands.
